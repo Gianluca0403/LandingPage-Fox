@@ -33,7 +33,7 @@ export const navLinks = [
 
 // SUBSTITUA PELO TEXTO REAL DA FOX
 export const heroContent = {
-  eyebrow: 'Regulação de sinistros desde 1919',
+  eyebrow: 'Regulação de sinistros desde 1995',
   title: 'Regulação de sinistros com técnica, agilidade e transparência',
   subtitle:
     'A FOX Reguladora atua em todo o território nacional na regulação e liquidação de sinistros de transporte, automóvel, property, vida, affinity e assistências, entregando laudos precisos e prazos que a sua seguradora pode confiar.',
@@ -44,8 +44,8 @@ export const heroContent = {
 
 export const heroStats = [
   { value: 80, suffix: '+', label: 'colaboradores internos' },
-  { value: 105, suffix: ' anos', label: 'de história no mercado' },
-  { value: 27, suffix: '', label: 'estados atendidos' },
+  { value: 35, suffix: ' anos', label: 'de história no mercado' },
+  { value: 40, suffix: '', label: 'estados atendidos' },
   { value: 12, suffix: 'mil+', label: 'sinistros regulados por ano' },
 ]
 
@@ -58,48 +58,48 @@ export type TimelineItem = {
   image?: string
 }
 
-// SUBSTITUA PELO TEXTO REAL DA FOX (anos, marcos e fotos históricas)
+
 export const timelineData: TimelineItem[] = [
   {
-    year: 1919,
+    year: 1995,
     title: 'A fundação',
-    text: 'Nasce a operação que daria origem à FOX, dedicada à vistoria de cargas no porto de Santos, atendendo às primeiras companhias de seguro do país.',
+    text: 'Nasce a operação que daria origem à FOX, dedicada à vistoria de automoveis.',
   },
   {
-    year: 1930,
+    year: 1997,
     title: 'Primeiro escritório próprio',
     text: 'Inauguração do primeiro escritório técnico, com equipe fixa de vistoriadores e arquivo próprio de laudos.',
     image: '/images/timeline-1.png',
   },
   {
-    year: 1947,
+    year: 2000,
     title: 'Expansão para o transporte rodoviário',
     text: 'Com o crescimento das rodovias brasileiras, a FOX passa a regular sinistros de transporte rodoviário de cargas em todo o Sudeste.',
   },
   {
-    year: 1976,
+    year: 2005,
     title: 'Cobertura nacional',
     text: 'Rede de correspondentes e vistoriadores credenciados alcança todas as regiões do Brasil, reduzindo drasticamente o prazo de atendimento.',
     image: '/images/timeline-2.png',
   },
   {
-    year: 1998,
+    year: 2012,
     title: 'Novas carteiras',
-    text: 'Início das operações nas carteiras de automóvel, property e vida, consolidando a FOX como reguladora multilinha.',
+    text: 'Início das operações nas carteiras de property e vida, consolidando a FOX como reguladora multilinha.',
   },
   {
-    year: 2012,
+    year: 2018,
     title: 'Tecnologia e rastreabilidade',
     text: 'Implantação de plataforma própria de gestão de sinistros, com laudos digitais, fotos georreferenciadas e acompanhamento on-line pelo cliente.',
     image: '/images/timeline-3.png',
   },
   {
-    year: 2019,
+    year: 2025,
     title: 'Centenário e estruturação do grupo',
-    text: 'A FOX completa 100 anos e organiza suas atividades em empresas especializadas, incluindo comercialização de salvados e assistência 24h.',
+    text: 'A FOX completa 30 anos e organiza suas atividades em empresas especializadas, incluindo comercialização de salvados e assistência 24h.',
   },
   {
-    year: 2024,
+    year: 2026,
     title: 'Inteligência de dados',
     text: 'Uso de analytics e indicadores de performance para antecipar fraudes, reduzir custos indenizatórios e apoiar a subscrição das seguradoras parceiras.',
     image: '/images/timeline-4.png',
@@ -146,7 +146,7 @@ export const teamHighlights: TeamHighlight[] = [
 export const founder = {
   name: 'Paulo Hauptli',
   role: 'Sócio Fundador da FOX Reguladora',
-  photo: '/images/founder-paulo.png', // SUBSTITUA PELA FOTO REAL
+  photo: '/images/Paulo-Rogerio.jpeg',
   bio: [
     'Com mais de quatro décadas dedicadas ao mercado de seguros, Paulo Hauptli iniciou sua trajetória como vistoriador de cargas e construiu, ao longo dos anos, uma das estruturas de regulação de sinistros mais respeitadas do país.',
     'À frente da FOX, consolidou uma cultura técnica baseada em imparcialidade, evidência e relacionamento de longo prazo com seguradoras, corretoras e transportadores.',
@@ -291,32 +291,32 @@ export const groupCompanies: GroupCompany[] = [
     description: 'Núcleo técnico do grupo, responsável pela regulação e liquidação de sinistros em todas as carteiras.',
   },
   {
-    name: 'FOX Salvados',
-    tag: 'Comercialização',
+    name: 'Norn Consultoria em Seguros',
+    tag: 'Consultoria',
     initials: 'FS',
     description: 'Estrutura exclusiva de avaliação, leilão e venda de salvados, com foco em recuperação de indenização.',
   },
   {
-    name: 'FOX Assistência',
-    tag: 'SOS 24h',
+    name: 'HS Advogados',
+    tag: 'Advogacia',
     initials: 'FA',
     description: 'Central de atendimento emergencial, remoção, guarda de cargas e apoio ao segurado 24 horas.',
   },
   {
-    name: 'FOX Inspeções',
-    tag: 'Gerenciamento de risco',
+    name: 'FOX Ambiental',
+    tag: 'Ambiental',
     initials: 'FI',
     description: 'Vistorias prévias, inspeções de risco e auditoria de processos logísticos para subscrição.',
   },
   {
-    name: 'FOX Analytics',
+    name: 'NFP',
     tag: 'Inteligência de dados',
     initials: 'FN',
     description: 'Indicadores, relatórios gerenciais e modelos preditivos de fraude e severidade de sinistros.',
   },
   {
-    name: 'FOX Academy',
-    tag: 'Treinamento',
+    name: 'SSR',
+    tag: 'Comissarios de Avarias',
     initials: 'FC',
     description: 'Formação, reciclagem e certificação interna de vistoriadores e reguladores do grupo.',
   },
@@ -327,29 +327,29 @@ export const groupCompanies: GroupCompany[] = [
 // SUBSTITUA PELAS LOGOS REAIS DOS CLIENTES (ex: /logos/cliente.svg)
 export const clients: { name: string }[] = [
   { name: 'Seguradora Alfa' },
-  { name: 'Beta Seguros' },
-  { name: 'Grupo Gama' },
-  { name: 'Delta Transportes' },
-  { name: 'Épsilon Resseguros' },
-  { name: 'Zeta Logística' },
-  { name: 'Ômega Corretora' },
-  { name: 'Sigma Cargo' },
-  { name: 'Kappa Seguros' },
-  { name: 'Lambda Frotas' },
+  { name: 'Yellum' },
+  { name: 'Porto Sefuro' },
+  { name: 'Sul-America' },
+  { name: 'Avla' },
+  { name: 'Ezze' },
+  { name: 'FairFax' },
+  { name: 'Berkley' },
+  { name: 'Sompo' },
+  { name: 'Brasil Seg' },
 ]
 
 /* -------------------------------- CONTATO --------------------------- */
 
 // SUBSTITUA PELOS DADOS REAIS DE CONTATO
 export const contactInfo = {
-  address: 'Av. Exemplo, 1.000 — Conj. 120 — Santos/SP — CEP 11000-000',
-  phone: '+55 (13) 0000-0000',
+  address: 'Av Frascisco Matarazzo 1719 conj 1751',
+  phone: '+55 (11) 0000-0000',
   whatsapp: '+55 (13) 90000-0000',
-  email: 'contato@foxreguladora.com.br',
-  hours: 'Seg a sex, 8h às 18h — SOS 24h todos os dias',
+  email: 'contato@foxaudit.com.br',
+  hours: 'Seg a sex, 8:30h às 18h — SOS 24h todos os dias',
   socials: [
     { label: 'LinkedIn', href: '#' },
-    { label: 'Instagram', href: '#' },
-    { label: 'Facebook', href: '#' },
+    { label: 'Instagram', href: 'https://www.instagram.com/fox_regulacao/' },
+    { label: 'Facebook', href: 'https://www.facebook.com/foxreguladora/?locale=pt_BR' },
   ],
 }

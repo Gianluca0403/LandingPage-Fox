@@ -27,7 +27,7 @@ export function Footer() {
             align="left"
             eyebrow="Contato"
             title="Vamos regular juntos"
-            description="Fale com nossa equipe técnica sobre volumes, prazos, SLAs ou um sinistro em andamento. SUBSTITUA PELOS DADOS REAIS DE CONTATO."
+            description="Fale com nossa equipe técnica sobre volumes, prazos, SLAs ou um sinistro em andamento."
           />
 
           <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
@@ -134,7 +134,7 @@ export function Footer() {
         <div className="border-t border-white/10">
           <div className="fox-container flex flex-col gap-3 py-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
             <p>© {new Date().getFullYear()} FOX Reguladora. Todos os direitos reservados.</p>
-            <p>CNPJ 00.000.000/0001-00 — SUBSTITUA PELOS DADOS REAIS</p>
+            <p>CNPJ 00.000.000/0001-00 </p>
           </div>
         </div>
       </footer>
