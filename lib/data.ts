@@ -144,27 +144,27 @@ export const teamHighlights: TeamHighlight[] = [
 
 // SUBSTITUA PELO TEXTO REAL
 export const founder = {
-  name: 'Paulo Hauptli',
+  name: 'Paulo Rogério Haüptli',
   role: 'Sócio Fundador da FOX Reguladora',
   photo: '/images/Paulo-Rogerio.jpeg',
   bio: [
-    'Com mais de quatro décadas dedicadas ao mercado de seguros, Paulo Hauptli iniciou sua trajetória como vistoriador de cargas e construiu, ao longo dos anos, uma das estruturas de regulação de sinistros mais respeitadas do país.',
+    'Com mais de quatro décadas dedicadas ao mercado de seguros, Paulo Rogério Haüptli iniciou sua trajetória como vistoriador de cargas e construiu, ao longo dos anos, uma das estruturas de regulação de sinistros mais respeitadas do país.',
     'À frente da FOX, consolidou uma cultura técnica baseada em imparcialidade, evidência e relacionamento de longo prazo com seguradoras, corretoras e transportadores.',
   ],
   quote:
-    'Regular um sinistro é, antes de tudo, um exercício de responsabilidade: cada laudo representa uma decisão que impacta pessoas e negócios.',
+    'Regular sinistros é uma arte reservada a poucos, pois exige conhecimento técnico, experiência e absoluta imparcialidade. Vai muito além da análise de documentos: requer a construção de provas materiais e a compreensão dos aspectos jurídicos, financeiros e operacionais do risco. O regulador de sinistros deve ser um profissional multidisciplinar, capaz de transformar fatos em evidências e decisões técnicas fundamentadas.',
 }
 
 export type Credential = { course: string; institution: string; year: string }
 
 // SUBSTITUA PELOS CURSOS E CERTIFICAÇÕES REAIS
 export const founderCredentials: Credential[] = [
-  { course: '[Nome do Curso] — Técnico em Logística', institution: 'ETEC [Nome da Unidade]', year: '[Ano]' },
-  { course: '[Nome do Curso] — Regulação de Sinistros', institution: 'ETEC [Nome da Unidade]', year: '[Ano]' },
-  { course: '[Nome do Curso] — Perícia em Sinistros de Transporte', institution: '[Instituição]', year: '[Ano]' },
-  { course: '[Nome do Curso] — Gestão de Seguros', institution: 'ENS / FUNENSEG', year: '[Ano]' },
-  { course: '[Nome do Curso] — Prevenção e Combate à Fraude', institution: '[Instituição]', year: '[Ano]' },
-  { course: '[Nome da Certificação] — Gestão Empresarial', institution: '[Instituição]', year: '[Ano]' },
+  { course: 'Advogado Empresarial, Civilista e Criminalista Empresarial', institution: 'ETEC [Nome da Unidade]', year: '[Ano]' },
+  { course: 'Especialista em Direito Empresaria', institution: 'FVG Law', year: '[Ano]' },
+  { course: 'Especialista em Direito Crimina', institution: 'IBCCRIM ', year: '[Ano]' },
+  { course: 'Mestre em Direito Processual Coletivo', institution: 'PUC-SP', year: '[Ano]' },
+  { course: 'Doutorando em Direito Civil e Direito Processual Coletivo', institution: 'PUC-SP', year: '[Ano]' },
+  { course: 'Especialista em Inquérito Policia', institution: '[ACADEPOL', year: '[Ano]' },
 ]
 
 /* ------------------------------ SERVIÇOS ---------------------------- */
