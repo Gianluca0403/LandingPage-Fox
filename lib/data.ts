@@ -45,7 +45,7 @@ export const heroContent = {
 export const heroStats = [
   { value: 80, suffix: '+', label: 'colaboradores internos' },
   { value: 35, suffix: ' anos', label: 'de história no mercado' },
-  { value: 40, suffix: '', label: 'estados atendidos' },
+  { value: 27, suffix: '', label: 'estados atendidos' },
   { value: 12, suffix: 'mil+', label: 'sinistros regulados por ano' },
 ]
 
@@ -88,20 +88,20 @@ export const timelineData: TimelineItem[] = [
     text: 'Início das operações nas carteiras de property e vida, consolidando a FOX como reguladora multilinha.',
   },
   {
-    year: 2018,
-    title: 'Tecnologia e rastreabilidade',
-    text: 'Implantação de plataforma própria de gestão de sinistros, com laudos digitais, fotos georreferenciadas e acompanhamento on-line pelo cliente.',
+    year: 2016,
+    title: 'Mudança de casa',
+    text: 'Mudança para uma nova sede corporativa moderna e ampliada, estruturada para acompanhar nosso crescimento e aprimorar o atendimento aos clientes e parceiros.',
     image: '/images/timeline-3.png',
   },
   {
     year: 2025,
-    title: 'Centenário e estruturação do grupo',
-    text: 'A FOX completa 30 anos e organiza suas atividades em empresas especializadas, incluindo comercialização de salvados e assistência 24h.',
+    title: '30 ANOS DE HISTÓRIA',
+    text: 'Em 2025, a FOX completou 30 anos de atuação, celebrando três décadas de tradição, credibilidade e constante evolução no mercado de regulação e gestão de sinistros',
   },
   {
     year: 2026,
-    title: 'Inteligência de dados',
-    text: 'Uso de analytics e indicadores de performance para antecipar fraudes, reduzir custos indenizatórios e apoiar a subscrição das seguradoras parceiras.',
+    title: 'NASCIMENTO DA NFP',
+    text: 'Criação da NFP, a nova empresa de tecnologia do grupo, desenvolvida para impulsionar a transformação digital, otimizar processos e trazer inovação contínua às nossas operações em 2026.',
     image: '/images/timeline-4.png',
   },
 ]
@@ -146,7 +146,7 @@ export const teamHighlights: TeamHighlight[] = [
 export const founder = {
   name: 'Paulo Rogério Haüptli',
   role: 'Sócio Fundador da FOX Reguladora',
-  photo: '/images/Paulo-Rogerio.jpeg',
+  photo: '/images/Paulo.png',
   bio: [
     'Com mais de quatro décadas dedicadas ao mercado de seguros, Paulo Rogério Haüptli iniciou sua trajetória como vistoriador de cargas e construiu, ao longo dos anos, uma das estruturas de regulação de sinistros mais respeitadas do país.',
     'À frente da FOX, consolidou uma cultura técnica baseada em imparcialidade, evidência e relacionamento de longo prazo com seguradoras, corretoras e transportadores.',
