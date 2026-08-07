@@ -1,6 +1,7 @@
 'use client'
 
 import { ChevronDown, Menu, Phone, X } from 'lucide-react'
+import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import { navLinks, serviceLinks } from '@/lib/data'
 import { cn } from '@/lib/utils'
@@ -62,15 +63,16 @@ export function Header() {
       )}
     >
       <div className="fox-container flex h-20 items-center justify-between gap-6">
-        {/* LOGO — SUBSTITUA PELA LOGO REAL DA FOX */}
-        <a href="#home" onClick={closeAll} className="group flex items-center gap-3">
-          <span className="flex size-11 items-center justify-center rounded-xl bg-accent font-display text-lg font-bold tracking-tight text-accent-foreground transition-transform duration-300 group-hover:scale-105">
-            FX
-          </span>
-          <span className="leading-none">
-            <span className="block font-display text-xl font-bold tracking-[0.18em] text-white">FOX</span>
-            <span className="block text-[10px] font-medium tracking-[0.32em] text-white/60">REGULADORA</span>
-          </span>
+        {/* LOGO */}
+        <a href="#home" onClick={closeAll} className="group flex items-center">
+          <Image
+            src="/Empresas/Logo_Grupo_FOX.svg"
+            alt="Grupo FOX"
+            width={160}
+            height={56}
+            priority
+            className="h-11 w-auto transition-transform duration-300 group-hover:scale-105"
+          />
         </a>
 
         {/* NAV DESKTOP */}

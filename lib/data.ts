@@ -280,6 +280,8 @@ export type GroupCompany = {
   tag: string
   description: string
   initials: string
+  /** Caminho do arquivo dentro de /public, ex: '/Empresas/logo-fox.svg' */
+  logo?: string
 }
 
 // SUBSTITUA PELOS NOMES, LOGOS E DESCRIÇÕES REAIS DAS EMPRESAS DO GRUPO
@@ -289,36 +291,42 @@ export const groupCompanies: GroupCompany[] = [
     tag: 'Regulação de sinistros',
     initials: 'FX',
     description: 'Núcleo técnico do grupo, responsável pela regulação e liquidação de sinistros em todas as carteiras.',
+    logo: '/Empresas/Logo_Grupo_FOX.svg',
   },
   {
     name: 'Norn Consultoria em Seguros',
     tag: 'Consultoria',
     initials: 'FS',
     description: 'Estrutura exclusiva de avaliação, leilão e venda de salvados, com foco em recuperação de indenização.',
+    logo: '/Empresas/Logo_NORN.svg',
   },
   {
     name: 'HS Advogados',
     tag: 'Advogacia',
     initials: 'FA',
     description: 'Central de atendimento emergencial, remoção, guarda de cargas e apoio ao segurado 24 horas.',
+    logo: '/Empresas/Logo_Hauptli_Sabino.svg',
   },
   {
     name: 'FOX Ambiental',
     tag: 'Ambiental',
     initials: 'FI',
     description: 'Vistorias prévias, inspeções de risco e auditoria de processos logísticos para subscrição.',
+    logo: '/Empresas/Logo_FOX_Ambiental.svg',
   },
   {
     name: 'NFP',
     tag: 'Inteligência de dados',
     initials: 'FN',
     description: 'Indicadores, relatórios gerenciais e modelos preditivos de fraude e severidade de sinistros.',
+    logo: '/Empresas/Logo_NFP.svg',
   },
   {
     name: 'SSR',
     tag: 'Comissarios de Avarias',
     initials: 'FC',
     description: 'Formação, reciclagem e certificação interna de vistoriadores e reguladores do grupo.',
+    // SSR ainda não tem logo — sem o campo "logo", o card cai automaticamente no fallback com as iniciais
   },
 ]
 
@@ -348,7 +356,7 @@ export const contactInfo = {
   email: 'contato@foxaudit.com.br',
   hours: 'Seg a sex, 8:30h às 18h — SOS 24h todos os dias',
   socials: [
-    { label: 'LinkedIn', href: '#' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/fox-reguladora-e-auditoria-fox-9560b730/' },
     { label: 'Instagram', href: 'https://www.instagram.com/fox_regulacao/' },
     { label: 'Facebook', href: 'https://www.facebook.com/foxreguladora/?locale=pt_BR' },
   ],
