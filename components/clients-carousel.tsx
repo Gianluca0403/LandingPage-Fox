@@ -56,8 +56,7 @@ export function ClientsCarousel() {
               Quem confia na FOX
             </h2>
             <p className="mt-4 text-base leading-relaxed text-pretty text-white/70">
-              Seguradoras, resseguradoras, corretoras e transportadores de todo o Brasil. SUBSTITUA PELAS LOGOS REAIS DOS
-              CLIENTES.
+              Seguradoras, resseguradoras, corretoras e transportadores de todo o Brasil.
             </p>
           </div>
 
@@ -94,9 +93,14 @@ export function ClientsCarousel() {
           >
             {clients.map((client) => (
               <li key={client.name} className="w-1/2 shrink-0 px-2 sm:w-1/3 lg:w-1/5">
-                {/* SUBSTITUA PELO <Image> DA LOGO REAL DO CLIENTE */}
-                <div className="flex h-24 items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-4 text-center text-sm font-semibold uppercase tracking-[0.12em] text-white/60 transition-all duration-300 hover:-translate-y-1 hover:border-gold/40 hover:bg-white/10 hover:text-white">
-                  {client.name}
+                <div className="flex h-24 items-center justify-center rounded-2xl bg-white p-5 shadow-sm ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/10 hover:ring-gold/40">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="h-full w-full object-contain"
+                    loading="lazy"
+                  />
                 </div>
               </li>
             ))}

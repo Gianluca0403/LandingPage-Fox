@@ -74,15 +74,12 @@ export function Footer() {
       <footer className="bg-navy text-white">
         <div className="fox-container grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            {/* SUBSTITUA PELA LOGO REAL DA FOX */}
             <div className="flex items-center gap-3">
-              <span className="flex size-11 items-center justify-center rounded-xl bg-accent font-display text-lg font-bold text-accent-foreground">
-                FX
-              </span>
-              <span className="leading-none">
-                <span className="block font-display text-xl font-bold tracking-[0.18em]">FOX</span>
-                <span className="block text-[10px] font-medium tracking-[0.32em] text-white/60">REGULADORA</span>
-              </span>
+              <img
+                src="/Empresas/Logo_Grupo_FOX.svg"
+                alt="Grupo FOX"
+                className="h-11 w-auto"
+              />
             </div>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-white/60">
               Regulação e liquidação de sinistros em transporte, automóvel, property, vida, affinity e assistências, com
@@ -133,8 +130,15 @@ export function Footer() {
 
         <div className="border-t border-white/10">
           <div className="fox-container flex flex-col gap-3 py-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
-            <p>© {new Date().getFullYear()} FOX Reguladora. Todos os direitos reservados.</p>
-            <p>CNPJ 00.000.000/0001-00 </p>
+            <p className="leading-none">© {new Date().getFullYear()} FOX Reguladora. Todos os direitos reservados.</p>
+            <p className="inline-flex items-center gap-2 leading-none">
+              Desenvolvido por
+              <img
+                src="/Empresa/Logo_SynerG_Tech.svg"
+                alt="SynerG Tech"
+                className="block h-8 w-auto shrink-0"
+              />
+            </p>
           </div>
         </div>
       </footer>

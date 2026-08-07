@@ -332,18 +332,30 @@ export const groupCompanies: GroupCompany[] = [
 
 /* -------------------------------- CLIENTES -------------------------- */
 
-// SUBSTITUA PELAS LOGOS REAIS DOS CLIENTES (ex: /logos/cliente.svg)
-export const clients: { name: string }[] = [
-  { name: 'Seguradora Alfa' },
-  { name: 'Yellum' },
-  { name: 'Porto Sefuro' },
-  { name: 'Sul-America' },
-  { name: 'Avla' },
-  { name: 'Ezze' },
-  { name: 'FairFax' },
-  { name: 'Berkley' },
-  { name: 'Sompo' },
-  { name: 'Brasil Seg' },
+export type Client = {
+  name: string
+  /** Caminho do arquivo dentro de /public, ex: '/Seguradoras/Logo_Avla.svg' */
+  logo: string
+}
+
+export const clients: Client[] = [
+  { name: 'Avla', logo: '/Seguradoras/Logo_Avla.svg' },
+  { name: 'Berkley', logo: '/Seguradoras/Logo_Berkley.svg' },
+  { name: 'Brasilseg', logo: '/Seguradoras/Logo_BrasilSeg.svg' },
+  { name: 'Chubb', logo: '/Seguradoras/Logo_Chubb.svg' },
+  { name: 'Essor', logo: '/Seguradoras/Logo_Essor.svg' },
+  { name: 'Ezze Seguros', logo: '/Seguradoras/Logo_Ezze.svg' },
+  { name: 'FF Seguros', logo: '/Seguradoras/Logo_FF.svg' },
+  { name: 'HDI Seguros', logo: '/Seguradoras/Logo_HDI.svg' },
+  { name: 'Kovr Seguradora', logo: '/Seguradoras/Logo_Kovr.svg' },
+  { name: 'Porto Seguro', logo: '/Seguradoras/Logo_Porto.svg' },
+  { name: 'Sompo Seguros', logo: '/Seguradoras/Logo_Sompo.svg' },
+  { name: 'Suhai Seguros', logo: '/Seguradoras/Logo_Suhai.svg' },
+  { name: 'SulAmérica', logo: '/Seguradoras/Logo_SulAmerica.svg' },
+  { name: 'Sura', logo: '/Seguradoras/Logo_Sura.svg' },
+  { name: 'Swiss Re', logo: '/Seguradoras/Logo_SwissRe.svg' },
+  { name: 'Yelum Seguradora', logo: '/Seguradoras/Logo_Yelum.svg' },
+  { name: 'Zurich Seguros', logo: '/Seguradoras/Logo_Zurich.svg' },
 ]
 
 /* -------------------------------- CONTATO --------------------------- */
