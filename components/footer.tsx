@@ -6,7 +6,6 @@ import { SectionHeading } from '@/components/section-heading'
 
 const infoItems = [
   { icon: MapPin, label: 'Endereço', value: contactInfo.address },
-  { icon: Phone, label: 'Telefone', value: contactInfo.phone },
   { icon: MessageCircle, label: 'WhatsApp', value: contactInfo.whatsapp },
   { icon: Mail, label: 'E-mail', value: contactInfo.email },
   { icon: Clock, label: 'Atendimento', value: contactInfo.hours },
@@ -54,11 +53,11 @@ export function Footer() {
                   Sinistro em andamento? Acione nossa central de emergência a qualquer hora, todos os dias.
                 </p>
                 <a
-                  href={`tel:${contactInfo.phone.replace(/\D/g, '')}`}
+                  href={`tel:${contactInfo.sosPhone.replace(/\D/g, '')}`}
                   className="mt-4 inline-flex items-center gap-2 text-base font-semibold text-foreground transition-colors hover:text-accent"
                 >
                   <Phone className="size-4" />
-                  {contactInfo.phone}
+                  {contactInfo.sosPhone}
                 </a>
               </div>
             </Reveal>
@@ -134,7 +133,7 @@ export function Footer() {
             <p className="inline-flex items-center gap-2 leading-none">
               Desenvolvido por
               <img
-                src="/Empresa/Logo_SynerG_Tech.svg"
+                src="/Empresas/Logo_SynerG_Tech.svg"
                 alt="SynerG Tech"
                 className="block h-8 w-auto shrink-0"
               />
