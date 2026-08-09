@@ -11,6 +11,9 @@ const initialFields: Fields = { name: '', email: '', phone: '', subject: 'Transp
 
 const subjects = ['Transporte', 'Affinity', 'Automóvel', 'SOS', 'Vida', 'Property', 'Outro assunto']
 
+// Número que recebe as solicitações do site, no formato internacional (só dígitos: 55 + DDD + número)
+const WHATSAPP_NUMBER = '5511940162778'
+
 function validate(fields: Fields): Errors {
   const errors: Errors = {}
   if (fields.name.trim().length < 3) errors.name = 'Informe seu nome completo.'
@@ -18,6 +21,22 @@ function validate(fields: Fields): Errors {
   if (fields.phone.replace(/\D/g, '').length < 10) errors.phone = 'Informe um telefone com DDD.'
   if (fields.message.trim().length < 15) errors.message = 'Descreva sua necessidade com pelo menos 15 caracteres.'
   return errors
+}
+
+function buildWhatsappUrl(fields: Fields) {
+  const message = [
+    'Solicitação de atendimento — Site FOX Reguladora',
+    '',
+    `Nome: ${fields.name}`,
+    `E-mail: ${fields.email}`,
+    `Telefone: ${fields.phone}`,
+    `Carteira/Assunto: ${fields.subject}`,
+    '',
+    'Mensagem:',
+    fields.message,
+  ].join('\n')
+
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
 }
 
 export function ContactForm() {
@@ -36,12 +55,14 @@ export function ContactForm() {
     setErrors(nextErrors)
     if (Object.keys(nextErrors).length > 0) return
 
-    // SUBSTITUA POR UM ENVIO REAL (Server Action, API route ou serviço de e-mail)
     setStatus('sending')
-    window.setTimeout(() => {
-      setStatus('success')
-      setFields(initialFields)
-    }, 900)
+
+    // abre o WhatsApp (app ou web) já com a mensagem pronta pro usuário só enviar
+    const url = buildWhatsappUrl(fields)
+    window.open(url, '_blank', 'noopener,noreferrer')
+
+    setStatus('success')
+    setFields(initialFields)
   }
 
   const inputClass =
@@ -54,11 +75,11 @@ export function ContactForm() {
           <CheckCircle2 className="size-8" />
         </span>
         <h3 className="mt-6 font-display text-2xl font-bold uppercase tracking-tight text-card-foreground">
-          Mensagem enviada
+          Quase lá!
         </h3>
         <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
-          Recebemos seu contato. Nossa equipe técnica responderá em até um dia útil — em casos de sinistro em andamento,
-          acione nossa central 24h.
+          Abrimos o WhatsApp com sua mensagem pronta — é só conferir e enviar por lá para falar direto com nossa
+          equipe técnica. Em casos de sinistro em andamento, acione nossa central 24h.
         </p>
         <button
           type="button"
@@ -82,7 +103,7 @@ export function ContactForm() {
         Solicite um atendimento
       </h3>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-        Preencha os dados abaixo e nossa equipe entrará em contato.
+        Preencha os dados abaixo — vamos abrir o WhatsApp com sua mensagem pronta para enviar direto à nossa equipe.
       </p>
 
       <div className="mt-7 grid gap-5 sm:grid-cols-2">
@@ -165,7 +186,7 @@ export function ContactForm() {
         disabled={status === 'sending'}
         className="group mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-7 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-accent-foreground transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-accent/30 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
       >
-        {status === 'sending' ? 'Enviando...' : 'Enviar mensagem'}
+        {status === 'sending' ? 'Abrindo WhatsApp...' : 'Enviar mensagem'}
         <Send className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
       </button>
     </form>
