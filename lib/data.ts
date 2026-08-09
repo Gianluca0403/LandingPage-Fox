@@ -67,8 +67,8 @@ export const timelineData: TimelineItem[] = [
   },
   {
     year: 1997,
-    title: 'Primeiro escritório próprio',
-    text: 'Inauguração do primeiro escritório técnico, com equipe fixa de vistoriadores e arquivo próprio de laudos.',
+    title: 'INÍCIO TRANSPORTE, VIDA E DEMAIS RAMOS',
+    text: 'Ampliação do portfólio de serviços com o início do atendimento dedicado a Transporte, Vida e demais ramos, fortalecendo a presença da marca no mercado nacional.',
     image: '/images/timeline-1.png',
   },
   {
@@ -78,30 +78,30 @@ export const timelineData: TimelineItem[] = [
   },
   {
     year: 2005,
-    title: 'Cobertura nacional',
-    text: 'Rede de correspondentes e vistoriadores credenciados alcança todas as regiões do Brasil, reduzindo drasticamente o prazo de atendimento.',
+    title: 'ACIDENTES NA ESTRADA',
+    text: 'Em 2005, a FOX estruturou sua operação dedicada a acidentes na estrada, garantindo pronta resposta, agilidade no atendimento de campo e apuração precisa de ocorrências em rodovias.',
     image: '/images/timeline-2.png',
   },
   {
-    year: 2012,
-    title: 'Novas carteiras',
-    text: 'Início das operações nas carteiras de property e vida, consolidando a FOX como reguladora multilinha.',
+    year: 2016,
+    title: 'MUDANÇA DE CASA',
+    text: 'Inauguração da nova sede da FOX Reguladora, garantindo um ambiente moderno, colaborativo e preparado para impulsionar nossa expansão e excelência operacional.',
   },
   {
-    year: 2016,
-    title: 'Mudança de casa',
-    text: 'Mudança para uma nova sede corporativa moderna e ampliada, estruturada para acompanhar nosso crescimento e aprimorar o atendimento aos clientes e parceiros.',
+    year: 2018,
+    title: 'FUNDAÇÃO DA NORN',
+    text: 'Criação da Norn Consultoria em Seguros, desenvolvida para oferecer consultoria técnica de excelência, gestão preditiva de sinistros e suporte especializado na tomada de decisões.',
     image: '/images/timeline-3.png',
   },
   {
     year: 2025,
     title: '30 ANOS DE HISTÓRIA',
-    text: 'Em 2025, a FOX completou 30 anos de atuação, celebrando três décadas de tradição, credibilidade e constante evolução no mercado de regulação e gestão de sinistros',
+    text: 'Marca histórica de 30 anos alcançada em 2025, reafirmando nosso compromisso com a excelência, a transparência e a construção de parcerias sólidas ao longo do tempo.',
   },
   {
     year: 2026,
-    title: 'NASCIMENTO DA NFP',
-    text: 'Criação da NFP, a nova empresa de tecnologia do grupo, desenvolvida para impulsionar a transformação digital, otimizar processos e trazer inovação contínua às nossas operações em 2026.',
+    title: 'Inteligência de dados',
+    text: 'Uso de analytics e indicadores de performance para antecipar fraudes, reduzir custos indenizatórios e apoiar a subscrição das seguradoras parceiras.',
     image: '/images/timeline-4.png',
   },
 ]
@@ -326,7 +326,7 @@ export const groupCompanies: GroupCompany[] = [
     tag: 'Comissarios de Avarias',
     initials: 'FC',
     description: 'Formação, reciclagem e certificação interna de vistoriadores e reguladores do grupo.',
-    // SSR ainda não tem logo — sem o campo "logo", o card cai automaticamente no fallback com as iniciais
+    logo: '/Empresas/Logo_SSR.svg',
   },
 ]
 
@@ -347,8 +347,11 @@ export const clients: Client[] = [
   { name: 'Ezze Seguros', logo: '/Seguradoras/Logo_Ezze.svg' },
   { name: 'FF Seguros', logo: '/Seguradoras/Logo_FF.svg' },
   { name: 'HDI Seguros', logo: '/Seguradoras/Logo_HDI.svg' },
+  { name: 'Itaú Seguros', logo: '/Seguradoras/Logo_Itau.svg' },
   { name: 'Kovr Seguradora', logo: '/Seguradoras/Logo_Kovr.svg' },
+  { name: 'Loovi', logo: '/Seguradoras/Logo_Loovi.svg' },
   { name: 'Porto Seguro', logo: '/Seguradoras/Logo_Porto.svg' },
+  { name: 'Pottencial Seguradora', logo: '/Seguradoras/Logo_Pottencial.svg' },
   { name: 'Sompo Seguros', logo: '/Seguradoras/Logo_Sompo.svg' },
   { name: 'Suhai Seguros', logo: '/Seguradoras/Logo_Suhai.svg' },
   { name: 'SulAmérica', logo: '/Seguradoras/Logo_SulAmerica.svg' },
@@ -362,10 +365,10 @@ export const clients: Client[] = [
 
 // SUBSTITUA PELOS DADOS REAIS DE CONTATO
 export const contactInfo = {
-  address: 'Av Frascisco Matarazzo 1719 conj 1751',
-  phone: '+55 (11) 0000-0000',
-  whatsapp: '+55 (13) 90000-0000',
-  email: 'contato@foxaudit.com.br',
+  address: 'Av Frascisco Matarazzo 1751 CONJ 1719',
+  sosPhone: '+55 (11) 94016-2778',
+  whatsapp: '+55 (11) 96363-5787',
+  email: 'comercial@foxaudit.com.br',
   hours: 'Seg a sex, 8:30h às 18h — SOS 24h todos os dias',
   socials: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/fox-reguladora-e-auditoria-fox-9560b730/' },
