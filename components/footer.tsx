@@ -5,7 +5,7 @@ import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 
 const infoItems = [
-  { icon: MapPin, label: 'Endereço', value: contactInfo.address },
+  { icon: MapPin, label: 'Endereco', value: contactInfo.address },
   { icon: MessageCircle, label: 'WhatsApp', value: contactInfo.whatsapp },
   { icon: Mail, label: 'E-mail', value: contactInfo.email },
   { icon: Clock, label: 'Atendimento', value: contactInfo.hours },
@@ -26,7 +26,7 @@ export function Footer() {
             align="left"
             eyebrow="Contato"
             title="Vamos regular juntos"
-            description="Fale com nossa equipe técnica sobre volumes, prazos, SLAs ou um sinistro em andamento."
+            description="Fale com nossa equipe tecnica sobre volumes, prazos, SLAs ou um sinistro em andamento."
           />
 
           <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
@@ -50,7 +50,7 @@ export function Footer() {
               <div className="mt-10 rounded-2xl border border-accent/30 bg-accent/5 p-6">
                 <p className="font-display text-sm font-bold uppercase tracking-[0.16em] text-accent">SOS 24 horas</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Sinistro em andamento? Acione nossa central de emergência a qualquer hora, todos os dias.
+                  Sinistro em andamento? Acione nossa central de emergencia a qualquer hora, todos os dias.
                 </p>
                 <a
                   href={`tel:${contactInfo.sosPhone.replace(/\D/g, '')}`}
@@ -69,7 +69,7 @@ export function Footer() {
         </div>
       </section>
 
-      {/* ------------------------------ RODAPÉ ------------------------------- */}
+      {/* ------------------------------ RODAPE ------------------------------- */}
       <footer className="bg-navy text-white">
         <div className="fox-container grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
@@ -81,16 +81,18 @@ export function Footer() {
               />
             </div>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-white/60">
-              Regulação e liquidação de sinistros em transporte, automóvel, property, vida, affinity e assistências, com
-              cobertura nacional e mais de um século de experiência técnica.
+              Regulacao e liquidacao de sinistros em transporte, automovel, property, vida, affinity e assistencias, com
+              cobertura nacional e mais de um seculo de experiencia tecnica.
             </p>
 
             <ul className="mt-7 flex gap-3">
               {contactInfo.socials.map((social) => (
                 <li key={social.label}>
-                  {/* SUBSTITUA PELOS LINKS REAIS DAS REDES SOCIAIS */}
+                  {/* SUBSTITUA PELOS LINKS REAIS DAS REDES SOCIAIS, SE NECESSARIO */}
                   <a
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/70 transition-colors hover:border-gold hover:text-gold"
                   >
                     {social.label}
@@ -100,8 +102,8 @@ export function Footer() {
             </ul>
           </div>
 
-          <nav aria-label="Links rápidos">
-            <h3 className="font-display text-xs font-bold uppercase tracking-[0.2em] text-gold">Navegação</h3>
+          <nav aria-label="Links rapidos">
+            <h3 className="font-display text-xs font-bold uppercase tracking-[0.2em] text-gold">Navegacao</h3>
             <ul className="mt-5 space-y-3">
               {navLinks.map((link) => (
                 <li key={link.label}>
@@ -113,8 +115,8 @@ export function Footer() {
             </ul>
           </nav>
 
-          <nav aria-label="Serviços">
-            <h3 className="font-display text-xs font-bold uppercase tracking-[0.2em] text-gold">Serviços</h3>
+          <nav aria-label="Servicos">
+            <h3 className="font-display text-xs font-bold uppercase tracking-[0.2em] text-gold">Servicos</h3>
             <ul className="mt-5 space-y-3">
               {serviceLinks.map((service) => (
                 <li key={service.slug}>
@@ -129,15 +131,20 @@ export function Footer() {
 
         <div className="border-t border-white/10">
           <div className="fox-container flex flex-col gap-3 py-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
-            <p className="leading-none">© {new Date().getFullYear()} FOX Reguladora. Todos os direitos reservados.</p>
-            <p className="inline-flex items-center gap-2 leading-none">
+            <p className="leading-none">(c) {new Date().getFullYear()} FOX Reguladora. Todos os direitos reservados.</p>
+            <a
+              href="https://synergg.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 leading-none transition-opacity hover:opacity-80"
+            >
               Desenvolvido por
               <img
-                src="/Empresas/Logo_SynerG_Tech.svg"
+                src="/Empresa/Logo_SynerG_Tech.svg"
                 alt="SynerG Tech"
                 className="block h-8 w-auto shrink-0"
               />
-            </p>
+            </a>
           </div>
         </div>
       </footer>

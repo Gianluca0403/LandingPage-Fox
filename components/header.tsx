@@ -14,7 +14,6 @@ export function Header() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
-  // sombra / background do header ao rolar
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
     onScroll()
@@ -22,7 +21,6 @@ export function Header() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // fecha o submenu ao clicar fora ou pressionar Esc
   useEffect(() => {
     if (!servicesOpen) return
     const onPointerDown = (event: MouseEvent) => {
@@ -39,7 +37,6 @@ export function Header() {
     }
   }, [servicesOpen])
 
-  // trava o scroll com o menu mobile aberto
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : ''
     return () => {
@@ -62,9 +59,8 @@ export function Header() {
           : 'bg-navy/25 backdrop-blur-sm',
       )}
     >
-      <div className="fox-container flex h-20 items-center justify-between gap-6">
-        {/* LOGO */}
-        <a href="#home" onClick={closeAll} className="group flex items-center">
+      <div className="fox-container flex h-20 items-center justify-between gap-4">
+        <a href="#home" onClick={closeAll} className="group flex shrink-0 items-center">
           <Image
             src="/Empresas/Logo_Grupo_FOX.svg"
             alt="Grupo FOX"
@@ -75,8 +71,7 @@ export function Header() {
           />
         </a>
 
-        {/* NAV DESKTOP */}
-        <nav aria-label="Navegação principal" className="hidden items-center gap-1 lg:flex">
+        <nav aria-label="Navegacao principal" className="hidden items-center gap-0.5 xl:flex">
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.label} ref={dropdownRef} className="relative" onMouseLeave={() => setServicesOpen(false)}>
@@ -86,7 +81,7 @@ export function Header() {
                   onClick={() => setServicesOpen((open) => !open)}
                   aria-expanded={servicesOpen}
                   aria-haspopup="true"
-                  className="flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold uppercase tracking-[0.12em] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
+                  className="flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-[13px] font-semibold uppercase tracking-[0.08em] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
                 >
                   {link.label}
                   <ChevronDown className={cn('size-4 transition-transform duration-300', servicesOpen && 'rotate-180')} />
@@ -120,7 +115,7 @@ export function Header() {
               <a
                 key={link.label}
                 href={link.href}
-                className="rounded-full px-4 py-2 text-[13px] font-semibold uppercase tracking-[0.12em] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
+                className="whitespace-nowrap rounded-full px-3 py-2 text-[13px] font-semibold uppercase tracking-[0.08em] text-white/80 transition-colors hover:bg-white/10 hover:text-white"
               >
                 {link.label}
               </a>
@@ -128,11 +123,21 @@ export function Header() {
           )}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <ThemeToggle className="hidden sm:inline-flex" />
+
+          <a
+            href="/trabalhe-conosco"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden items-center gap-2 whitespace-nowrap rounded-full border border-white/25 px-4 py-2.5 text-[12px] font-semibold uppercase tracking-[0.08em] text-white/90 transition-all duration-300 hover:bg-white/10 xl:inline-flex"
+          >
+            Trabalhe conosco
+          </a>
+
           <a
             href="#contato"
-            className="hidden items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-[13px] font-semibold uppercase tracking-[0.12em] text-accent-foreground transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/30 lg:inline-flex"
+            className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-accent px-4 py-2.5 text-[12px] font-semibold uppercase tracking-[0.08em] text-accent-foreground transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/30 xl:inline-flex"
           >
             <Phone className="size-4" />
             Fale conosco
@@ -143,21 +148,20 @@ export function Header() {
             onClick={() => setMobileOpen((open) => !open)}
             aria-label={mobileOpen ? 'Fechar menu' : 'Abrir menu'}
             aria-expanded={mobileOpen}
-            className="inline-flex size-11 items-center justify-center rounded-xl border border-white/20 text-white transition-colors hover:bg-white/10 lg:hidden"
+            className="inline-flex size-11 items-center justify-center rounded-xl border border-white/20 text-white transition-colors hover:bg-white/10 xl:hidden"
           >
             {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
         </div>
       </div>
 
-      {/* MENU MOBILE */}
       <div
         className={cn(
-          'overflow-y-auto border-t border-white/10 bg-navy transition-all duration-300 lg:hidden',
+          'overflow-y-auto border-t border-white/10 bg-navy transition-all duration-300 xl:hidden',
           mobileOpen ? 'max-h-[calc(100vh-5rem)] opacity-100' : 'max-h-0 overflow-hidden opacity-0',
         )}
       >
-        <nav aria-label="Navegação mobile" className="fox-container flex flex-col gap-1 py-6">
+        <nav aria-label="Navegacao mobile" className="fox-container flex flex-col gap-1 py-6">
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.label} className="border-b border-white/10 pb-2">
@@ -202,6 +206,16 @@ export function Header() {
               </a>
             ),
           )}
+
+          <a
+            href="/trabalhe-conosco"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeAll}
+            className="border-b border-white/10 py-3.5 text-sm font-semibold uppercase tracking-[0.14em] text-white"
+          >
+            Trabalhe conosco
+          </a>
 
           <div className="mt-5 flex items-center gap-3">
             <a
