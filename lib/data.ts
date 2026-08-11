@@ -63,17 +63,17 @@ export const timelineData: TimelineItem[] = [
   {
     year: 1995,
     title: 'A fundação',
-    text: 'Nasce a operação que daria origem à FOX, dedicada à vistoria de automoveis.',
+    text: 'Nasce a operação que daria origem à FOX, dedicada à sindicancia de automoveis.',
   },
   {
     year: 1997,
-    title: 'INÍCIO TRANSPORTE, VIDA E DEMAIS RAMOS',
-    text: 'Ampliação do portfólio de serviços com o início do atendimento dedicado a Transporte, Vida e demais ramos, fortalecendo a presença da marca no mercado nacional.',
+    title: 'INÍCIO TRANSPORTE, VIDA',
+    text: 'Ampliação do portfólio de serviços com o início do atendimento dedicado a Transporte e Vida, fortalecendo a presença da marca no mercado nacional.',
     image: '/images/timeline-1.png',
   },
   {
     year: 2000,
-    title: 'Expansão para o transporte rodoviário',
+    title: 'Expansão do seguro de transporte rodoviário',
     text: 'Com o crescimento das rodovias brasileiras, a FOX passa a regular sinistros de transporte rodoviário de cargas em todo o Sudeste.',
   },
   {
@@ -82,6 +82,14 @@ export const timelineData: TimelineItem[] = [
     text: 'Em 2005, a FOX estruturou sua operação dedicada a acidentes na estrada, garantindo pronta resposta, agilidade no atendimento de campo e apuração precisa de ocorrências em rodovias.',
     image: '/images/timeline-2.png',
   },
+
+   {
+    year: 2012,
+    title: 'Regulacao de sinistros patrimôniais',
+    text: 'Ampliação do portfólio com a regulação de sinistros patrimoniais, combinando inteligência técnica, laudos conclusivos e gestão ágil para mitigar perdas em patrimônios diversos.',
+    image: '/images/timeline-2.png',
+  },
+
   {
     year: 2016,
     title: 'MUDANÇA DE CASA',
@@ -100,8 +108,8 @@ export const timelineData: TimelineItem[] = [
   },
   {
     year: 2026,
-    title: 'Inteligência de dados',
-    text: 'Uso de analytics e indicadores de performance para antecipar fraudes, reduzir custos indenizatórios e apoiar a subscrição das seguradoras parceiras.',
+    title: 'CRIAÇÃO DA NFP',
+    text: 'Lançamento da NFP Tech, a empresa de tecnologia do grupo criada para desenvolver softwares próprios, automatizar processos e trazer inteligência de dados à regulação de sinistros.',
     image: '/images/timeline-4.png',
   },
 ]
@@ -159,12 +167,12 @@ export type Credential = { course: string; institution: string; year: string }
 
 // SUBSTITUA PELOS CURSOS E CERTIFICAÇÕES REAIS
 export const founderCredentials: Credential[] = [
-  { course: 'Advogado Empresarial, Civilista e Criminalista Empresarial', institution: 'ETEC [Nome da Unidade]', year: '[Ano]' },
-  { course: 'Especialista em Direito Empresaria', institution: 'FVG Law', year: '[Ano]' },
-  { course: 'Especialista em Direito Crimina', institution: 'IBCCRIM ', year: '[Ano]' },
-  { course: 'Mestre em Direito Processual Coletivo', institution: 'PUC-SP', year: '[Ano]' },
-  { course: 'Doutorando em Direito Civil e Direito Processual Coletivo', institution: 'PUC-SP', year: '[Ano]' },
-  { course: 'Especialista em Inquérito Policia', institution: '[ACADEPOL', year: '[Ano]' },
+  { course: 'Advogado Empresarial, Civilista e Criminalista Empresarial', institution: '', year: '2015' },
+  { course: 'Especialista em Direito Empresarial', institution: 'FVG Law', year: '2023' },
+  { course: 'Especialista em Direito Criminal', institution: 'IBCCRIM ', year: '1999' },
+  { course: 'Mestre em Direito Processual Coletivo', institution: 'PUC-SP', year: '2021' },
+  { course: 'Comissario de Avaria', institution: '?', year: '1997' },
+  { course: 'Especialista em Inquérito Policia', institution: '[ACADEPOL', year: '1988' },
 ]
 
 /* ------------------------------ SERVIÇOS ---------------------------- */
@@ -290,35 +298,35 @@ export const groupCompanies: GroupCompany[] = [
     name: 'FOX Reguladora',
     tag: 'Regulação de sinistros',
     initials: 'FX',
-    description: 'Núcleo técnico do grupo, responsável pela regulação e liquidação de sinistros em todas as carteiras.',
+    description: 'Núcleo técnico e operacional do grupo, especializado na regulação, apuração e liquidação ágil de sinistros em todas as carteiras do mercado.',
     logo: '/Empresas/Logo_Grupo_FOX.svg',
   },
   {
     name: 'Norn Consultoria em Seguros',
     tag: 'Consultoria',
     initials: 'FS',
-    description: 'Estrutura exclusiva de avaliação, leilão e venda de salvados, com foco em recuperação de indenização.',
+    description: 'Assessoria técnica e estratégica especializada em inteligência de seguros, análise de riscos e soluções customizadas para otimizar a gestão e subscrição da carteira.',
     logo: '/Empresas/Logo_NORN.svg',
   },
   {
     name: 'HS Advogados',
     tag: 'Advogacia',
     initials: 'FA',
-    description: 'Central de atendimento emergencial, remoção, guarda de cargas e apoio ao segurado 24 horas.',
+    description: 'Escritório de advocacia focado na defesa dos interesses do mercado segurador, gestão de riscos legais, ressarcimento e suporte jurídico integral.',
     logo: '/Empresas/Logo_Hauptli_Sabino.svg',
   },
   {
     name: 'FOX Ambiental',
     tag: 'Ambiental',
     initials: 'FI',
-    description: 'Vistorias prévias, inspeções de risco e auditoria de processos logísticos para subscrição.',
+    description: 'Avaliação técnica de impactos ambientais, vistorias prévias e auditorias de processos logísticos para prevenção de danos e conformidade com a legislação.',
     logo: '/Empresas/Logo_FOX_Ambiental.svg',
   },
   {
     name: 'NFP',
     tag: 'Inteligência de dados',
     initials: 'FN',
-    description: 'Indicadores, relatórios gerenciais e modelos preditivos de fraude e severidade de sinistros.',
+    description: 'Soluções tecnológicas avançadas com inteligência de dados, relatórios gerenciais e modelos preditivos para prevenção de fraudes e controle de severidade.',
     logo: '/Empresas/Logo_NFP.svg',
   },
   {

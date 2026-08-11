@@ -211,7 +211,7 @@ export default function TrabalheConoscoPage() {
                   ref={fileInputRef}
                   type="file"
                   name="attachment"
-                  accept=".pdf"
+                  accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
                   required
                   className="sr-only"
                   onChange={(e) => assignFile(e.target.files?.[0])}
