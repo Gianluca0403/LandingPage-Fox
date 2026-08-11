@@ -4,7 +4,7 @@ import { CheckCircle2, FileText, GraduationCap, ShieldCheck, TrendingUp, Upload,
 import { useRef, useState } from 'react'
 import { cn } from '@/lib/utils'
 
-const EMAIL_RH = 'gianlucasacilote@gmail.com' // EMAIL DE TESTE - trocar pelo email real da empresa depois
+const EMAIL_RH = 'comercial@foxaudit.com.br' // EMAIL DE TESTE - trocar pelo email real da empresa depois
 
 // SUBSTITUA PELOS DIFERENCIAIS REAIS DE TRABALHAR NA FOX
 const highlights = [
