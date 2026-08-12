@@ -4,8 +4,6 @@ import { CheckCircle2, FileText, GraduationCap, ShieldCheck, TrendingUp, Upload,
 import { useRef, useState } from 'react'
 import { cn } from '@/lib/utils'
 
-const EMAIL_RH = 'comercial@foxaudit.com.br' // EMAIL DE TESTE - trocar pelo email real da empresa depois
-
 // SUBSTITUA PELOS DIFERENCIAIS REAIS DE TRABALHAR NA FOX
 const highlights = [
   { icon: TrendingUp, text: 'Empresa em expansao, com estrutura solida no mercado de seguros ha decadas.' },
@@ -42,18 +40,22 @@ export default function TrabalheConoscoPage() {
     const formData = new FormData(form)
 
     try {
-      const res = await fetch(`https://formsubmit.co/${EMAIL_RH}`, {
+      const res = await fetch('/api/enviar-curriculo', {
         method: 'POST',
         body: formData,
       })
-      if (res.ok) {
+      const data = await res.json()
+
+      if (res.ok && data.success) {
         setStatus('sent')
         form.reset()
         setFileName(null)
       } else {
+        console.error('Falha ao enviar:', data.error)
         setStatus('error')
       }
-    } catch {
+    } catch (err) {
+      console.error(err)
       setStatus('error')
     }
   }
@@ -121,11 +123,7 @@ export default function TrabalheConoscoPage() {
             <h2 className="text-lg font-bold text-foreground">Envie seu curriculo</h2>
             <p className="mt-1 text-sm text-muted-foreground">Os campos com * sao obrigatorios.</p>
 
-            <form onSubmit={handleSubmit} encType="multipart/form-data" className="mt-6 space-y-5">
-              <input type="hidden" name="_subject" value="Novo curriculo - Trabalhe Conosco FOX" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-
+            <form onSubmit={handleSubmit} className="mt-6 space-y-5">
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
                   <label className="text-xs font-semibold uppercase tracking-[0.08em] text-foreground">

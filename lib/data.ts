@@ -39,7 +39,7 @@ export const heroContent = {
     'A FOX Reguladora atua em todo o território nacional na regulação e liquidação de sinistros de transporte, automóvel, property, vida, affinity e assistências, entregando laudos precisos e prazos que a sua seguradora pode confiar.',
   primaryCta: { label: 'Fale conosco', href: '#contato' },
   secondaryCta: { label: 'Conheça nossos serviços', href: '#servicos' },
-  image: '/images/hero-fox.png', // SUBSTITUA PELA IMAGEM REAL
+  image: '/images/hero-fox.avif', // SUBSTITUA PELA IMAGEM REAL
 }
 
 export const heroStats = [
@@ -69,7 +69,7 @@ export const timelineData: TimelineItem[] = [
     year: 1997,
     title: 'INÍCIO TRANSPORTE, VIDA',
     text: 'Ampliação do portfólio de serviços com o início do atendimento dedicado a Transporte e Vida, fortalecendo a presença da marca no mercado nacional.',
-    image: '/images/timeline-1.png',
+    image: '/images/timeline-1.avif',
   },
   {
     year: 2000,
@@ -80,14 +80,14 @@ export const timelineData: TimelineItem[] = [
     year: 2005,
     title: 'ACIDENTES NA ESTRADA',
     text: 'Em 2005, a FOX estruturou sua operação dedicada a acidentes na estrada, garantindo pronta resposta, agilidade no atendimento de campo e apuração precisa de ocorrências em rodovias.',
-    image: '/images/timeline-2.png',
+    image: '/images/timeline-2.avif',
   },
 
    {
     year: 2012,
     title: 'Regulacao de sinistros patrimôniais',
     text: 'Ampliação do portfólio com a regulação de sinistros patrimoniais, combinando inteligência técnica, laudos conclusivos e gestão ágil para mitigar perdas em patrimônios diversos.',
-    image: '/images/timeline-2.png',
+    image: '/images/timeline-2.avif',
   },
 
   {
@@ -99,7 +99,7 @@ export const timelineData: TimelineItem[] = [
     year: 2018,
     title: 'FUNDAÇÃO DA NORN',
     text: 'Criação da Norn Consultoria em Seguros, desenvolvida para oferecer consultoria técnica de excelência, gestão preditiva de sinistros e suporte especializado na tomada de decisões.',
-    image: '/images/timeline-3.png',
+    image: '/images/timeline-3.avif',
   },
   {
     year: 2025,
@@ -110,7 +110,7 @@ export const timelineData: TimelineItem[] = [
     year: 2026,
     title: 'CRIAÇÃO DA NFP',
     text: 'Lançamento da NFP Tech, a empresa de tecnologia do grupo criada para desenvolver softwares próprios, automatizar processos e trazer inteligência de dados à regulação de sinistros.',
-    image: '/images/timeline-4.png',
+    image: '/images/timeline-4.avif',
   },
 ]
 
@@ -154,7 +154,7 @@ export const teamHighlights: TeamHighlight[] = [
 export const founder = {
   name: 'Paulo Rogério Haüptli',
   role: 'Sócio Fundador da FOX Reguladora',
-  photo: '/images/Paulo.png',
+  photo: '/images/Paulo.avif',
   bio: [
     'Com mais de quatro décadas dedicadas ao mercado de seguros, Paulo Rogério Haüptli iniciou sua trajetória como vistoriador de cargas e construiu, ao longo dos anos, uma das estruturas de regulação de sinistros mais respeitadas do país.',
     'À frente da FOX, consolidou uma cultura técnica baseada em imparcialidade, evidência e relacionamento de longo prazo com seguradoras, corretoras e transportadores.',
@@ -299,42 +299,42 @@ export const groupCompanies: GroupCompany[] = [
     tag: 'Regulação de sinistros',
     initials: 'FX',
     description: 'Núcleo técnico e operacional do grupo, especializado na regulação, apuração e liquidação ágil de sinistros em todas as carteiras do mercado.',
-    logo: '/Empresas/Logo_Grupo_FOX.svg',
+    logo: '/Empresas/Logo_Grupo_FOX.avif',
   },
   {
     name: 'Norn Consultoria em Seguros',
     tag: 'Consultoria',
     initials: 'FS',
     description: 'Assessoria técnica e estratégica especializada em inteligência de seguros, análise de riscos e soluções customizadas para otimizar a gestão e subscrição da carteira.',
-    logo: '/Empresas/Logo_NORN.svg',
+    logo: '/Empresas/Logo_NORN.avif',
   },
   {
     name: 'HS Advogados',
     tag: 'Advogacia',
     initials: 'FA',
     description: 'Escritório de advocacia focado na defesa dos interesses do mercado segurador, gestão de riscos legais, ressarcimento e suporte jurídico integral.',
-    logo: '/Empresas/Logo_Hauptli_Sabino.svg',
+    logo: '/Empresas/Logo_Hauptli_Sabino.avif',
   },
   {
     name: 'FOX Ambiental',
     tag: 'Ambiental',
     initials: 'FI',
     description: 'Avaliação técnica de impactos ambientais, vistorias prévias e auditorias de processos logísticos para prevenção de danos e conformidade com a legislação.',
-    logo: '/Empresas/Logo_FOX_Ambiental.svg',
+    logo: '/Empresas/Logo_FOX_Ambiental.avif',
   },
   {
     name: 'NFP',
     tag: 'Inteligência de dados',
     initials: 'FN',
     description: 'Soluções tecnológicas avançadas com inteligência de dados, relatórios gerenciais e modelos preditivos para prevenção de fraudes e controle de severidade.',
-    logo: '/Empresas/Logo_NFP.svg',
+    logo: '/Empresas/Logo_NFP.avif',
   },
   {
     name: 'SSR',
     tag: 'Comissarios de Avarias',
     initials: 'FC',
     description: 'Formação, reciclagem e certificação interna de vistoriadores e reguladores do grupo.',
-    logo: '/Empresas/Logo_SSR.svg',
+    logo: '/Empresas/Logo_SSR.avif',
   },
 ]
 
@@ -347,26 +347,26 @@ export type Client = {
 }
 
 export const clients: Client[] = [
-  { name: 'Avla', logo: '/Seguradoras/Logo_Avla.svg' },
-  { name: 'Berkley', logo: '/Seguradoras/Logo_Berkley.svg' },
-  { name: 'Brasilseg', logo: '/Seguradoras/Logo_BrasilSeg.svg' },
-  { name: 'Chubb', logo: '/Seguradoras/Logo_Chubb.svg' },
-  { name: 'Essor', logo: '/Seguradoras/Logo_Essor.svg' },
-  { name: 'Ezze Seguros', logo: '/Seguradoras/Logo_Ezze.svg' },
-  { name: 'FF Seguros', logo: '/Seguradoras/Logo_FF.svg' },
-  { name: 'HDI Seguros', logo: '/Seguradoras/Logo_HDI.svg' },
-  { name: 'Itaú Seguros', logo: '/Seguradoras/Logo_Itau.svg' },
-  { name: 'Kovr Seguradora', logo: '/Seguradoras/Logo_Kovr.svg' },
-  { name: 'Loovi', logo: '/Seguradoras/Logo_Loovi.svg' },
-  { name: 'Porto Seguro', logo: '/Seguradoras/Logo_Porto.svg' },
-  { name: 'Pottencial Seguradora', logo: '/Seguradoras/Logo_Pottencial.svg' },
-  { name: 'Sompo Seguros', logo: '/Seguradoras/Logo_Sompo.svg' },
-  { name: 'Suhai Seguros', logo: '/Seguradoras/Logo_Suhai.svg' },
-  { name: 'SulAmérica', logo: '/Seguradoras/Logo_SulAmerica.svg' },
-  { name: 'Sura', logo: '/Seguradoras/Logo_Sura.svg' },
-  { name: 'Swiss Re', logo: '/Seguradoras/Logo_SwissRe.svg' },
-  { name: 'Yelum Seguradora', logo: '/Seguradoras/Logo_Yelum.svg' },
-  { name: 'Zurich Seguros', logo: '/Seguradoras/Logo_Zurich.svg' },
+  { name: 'Avla', logo: '/Seguradoras/Logo_Avla.avif' },
+  { name: 'Berkley', logo: '/Seguradoras/Logo_Berkley.avif' },
+  { name: 'Brasilseg', logo: '/Seguradoras/Logo_BrasilSeg.avif' },
+  { name: 'Chubb', logo: '/Seguradoras/Logo_Chubb.avif' },
+  { name: 'Essor', logo: '/Seguradoras/Logo_Essor.avif' },
+  { name: 'Ezze Seguros', logo: '/Seguradoras/Logo_Ezze.avif' },
+  { name: 'FF Seguros', logo: '/Seguradoras/Logo_FF.avif' },
+  { name: 'HDI Seguros', logo: '/Seguradoras/Logo_HDI.avif' },
+  { name: 'Itaú Seguros', logo: '/Seguradoras/Logo_Itau.avif' },
+  { name: 'Kovr Seguradora', logo: '/Seguradoras/Logo_Kovr.avif' },
+  { name: 'Loovi', logo: '/Seguradoras/Logo_Loovi.avif' },
+  { name: 'Porto Seguro', logo: '/Seguradoras/Logo_Porto.avif' },
+  { name: 'Pottencial Seguradora', logo: '/Seguradoras/Logo_Pottencial.avif' },
+  { name: 'Sompo Seguros', logo: '/Seguradoras/Logo_Sompo.avif' },
+  { name: 'Suhai Seguros', logo: '/Seguradoras/Logo_Suhai.avif' },
+  { name: 'SulAmérica', logo: '/Seguradoras/Logo_SulAmerica.avif' },
+  { name: 'Sura', logo: '/Seguradoras/Logo_Sura.avif' },
+  { name: 'Swiss Re', logo: '/Seguradoras/Logo_SwissRe.avif' },
+  { name: 'Yelum Seguradora', logo: '/Seguradoras/Logo_Yelum.avif' },
+  { name: 'Zurich Seguros', logo: '/Seguradoras/Logo_Zurich.avif' },
 ]
 
 /* -------------------------------- CONTATO --------------------------- */

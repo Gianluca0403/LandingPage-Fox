@@ -75,7 +75,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
               <img
-                src="/Empresas/Logo_Grupo_FOX.svg"
+                src="/Empresas/Logo_Grupo_FOX.avif"
                 alt="Grupo FOX"
                 className="h-11 w-auto"
               />
@@ -140,7 +140,7 @@ export function Footer() {
             >
               Desenvolvido por
               <img
-                src="/Empresa/Logo_SynerG_Tech.svg"
+                src="/Empresa/Logo_SynerG_Tech.avif"
                 alt="SynerG Tech"
                 className="block h-8 w-auto shrink-0"
               />

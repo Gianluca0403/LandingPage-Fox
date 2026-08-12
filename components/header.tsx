@@ -62,7 +62,7 @@ export function Header() {
       <div className="fox-container flex h-20 items-center justify-between gap-4">
         <a href="#home" onClick={closeAll} className="group flex shrink-0 items-center">
           <Image
-            src="/Empresas/Logo_Grupo_FOX.svg"
+            src="/Empresas/Logo_Grupo_FOX.avif"
             alt="Grupo FOX"
             width={160}
             height={56}
