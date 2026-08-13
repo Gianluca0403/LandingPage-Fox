@@ -305,21 +305,21 @@ export const groupCompanies: GroupCompany[] = [
     name: 'Norn Consultoria em Seguros',
     tag: 'Consultoria',
     initials: 'FS',
-    description: 'Assessoria técnica e estratégica especializada em inteligência de seguros, análise de riscos e soluções customizadas para otimizar a gestão e subscrição da carteira.',
+    description: 'Assessoria técnica e estratégica especializada em inteligência de seguros, TPA, análise de riscos e soluções customizadas para otimizar a gestão e subscrição da carteira.',
     logo: '/Empresas/Logo_NORN.avif',
   },
   {
     name: 'HS Advogados',
     tag: 'Advogacia',
     initials: 'FA',
-    description: 'Escritório de advocacia focado na defesa dos interesses do mercado segurador, gestão de riscos legais, ressarcimento e suporte jurídico integral.',
+    description: 'Escritório de advocacia focado na defesa dos interesses do mercado segurador, M&A, gestão de riscos legais, ressarcimento e suporte jurídico integral.',
     logo: '/Empresas/Logo_Hauptli_Sabino.avif',
   },
   {
     name: 'FOX Ambiental',
     tag: 'Ambiental',
     initials: 'FI',
-    description: 'Avaliação técnica de impactos ambientais, vistorias prévias e auditorias de processos logísticos para prevenção de danos e conformidade com a legislação.',
+    description: 'Avaliação técnica de impactos ambientais, vistorias prévias e auditorias de processos logísticos para prevenção de danos e conformidade com a legislação ambiental.',
     logo: '/Empresas/Logo_FOX_Ambiental.avif',
   },
   {
@@ -333,7 +333,7 @@ export const groupCompanies: GroupCompany[] = [
     name: 'SSR',
     tag: 'Comissarios de Avarias',
     initials: 'FC',
-    description: 'Formação, reciclagem e certificação interna de vistoriadores e reguladores do grupo.',
+    description: 'Inspeção, apuração de causas e certificação técnica de avarias em mercadorias e transportes, garantindo precisão na liquidação e suporte a ressarcimentos.',
     logo: '/Empresas/Logo_SSR.avif',
   },
 ]
